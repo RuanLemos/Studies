@@ -1,4 +1,4 @@
-# The goal of this code is to find the largest prime factor of 600851475143.
+# The goal of this code is to find the largest prime factor of 600851475143. 
 
 
 number = 600851475143
