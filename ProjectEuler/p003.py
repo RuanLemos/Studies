@@ -1,27 +1,21 @@
-# The goal of this code is to find the largest prime factor of 600851475143. 
+import math
 
+# according to the fundamental theorem of arithmetic, if n isn't already prime, it's first factor will always be prime.
+def find_first_factor(n):
+	for i in range(2, int(math.sqrt(n)) + 1):
+		if n % i == 0:
+			return i # i is a prime number
+	return n # n already is a prime number itself
 
-number = 600851475143
-factor_list = [] # Storages all the factors of the variable number
-prime_list = [] # Contains the prime values of factor_list
+def solve():
+	n = 600851475143
+	while True:
+		factor = find_first_factor(n)
+		print(n)
+		print(factor)
+		if n > factor: # eventually, find_first_factor() will return the same number it received, because it's already a prime. We have to verify it in order to not break the code.
+			n = n // factor
+		else:
+			 return n
 
-min = 1
-max = int(number/2) # the value is divided by two because we only search integer values, thus, 2 would be the smallest possible value
-
-for i in range(min+1, max+1):
-  if number % i == 0:
-    print(i)
-    factor_list.append(i) # if i successfully divides 600851475143 with no remainder, we it into factor_list
-
-for factor in factor_list:
-  flag = 0  
-  for num in range (2, factor/2):
-    if factor % num == 0:
-      flag += 1
-    if flag > 1:
-      break
-    elif flag == 0 and num == int(factor/2):
-      prime_list.append(num)
-      break
-
-print(prime_list)
+print(solve())
