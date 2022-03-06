@@ -1,6 +1,6 @@
 import math
 
-# according to the fundamental theorem of arithmetic, if n isn't already prime, it's first factor will always be prime.
+# according to the fundamental theorem of arithmetic, if n isn't already prime, it's first factor will always be prime. 
 def find_first_factor(n):
 	for i in range(2, int(math.sqrt(n)) + 1):
 		if n % i == 0:
