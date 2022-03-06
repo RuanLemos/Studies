@@ -14,7 +14,7 @@ def solve():
 		print(n)
 		print(factor)
 		if n > factor: # eventually, find_first_factor() will return the same number it received, because it's already a prime. We have to verify it in order to not break the code.
-			n = n // factor
+			n = n // factor # it never has a remainder, but I used floor division to get an integer value
 		else:
 			 return n
 
