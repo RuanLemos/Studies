@@ -1,3 +1,5 @@
+#In the third challenge, the goal is to find the highest prime factor of the number 600851475143
+
 import math
 
 # according to the fundamental theorem of arithmetic, if n isn't already prime, it's first factor will always be prime. 
