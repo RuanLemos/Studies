@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class trabAlmeida {
+public class Main {
     public static void main(String[] args) {
 
         //declaração de variáveis iniciais
