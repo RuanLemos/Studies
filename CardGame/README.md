@@ -7,3 +7,5 @@ The program asks the user to input three cards (number and a letter that represe
 5. Do they make a straight flush?
 
 It was kinda challenging and pretty fun to do, helping a lot with understanding how String and char manipulation works
+
+The code is entirely sequential and stays in the same "block of code" given that, at the time, we (college students) still didn't learn to separate functions nor use OOP.
