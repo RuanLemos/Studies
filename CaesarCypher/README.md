@@ -1,4 +1,4 @@
-A simple Caesar cypher encoder/decoder, it consists on shifting a character 3 letters away in the alphabet. Meaning A becomes D and Z becomes C.
+A simple Caesar cypher encoder/decoder, it consists on shifting a character 3 letters away in the alphabet, meaning A becomes D and Z becomes C.
 
 I made it to only work accordingly on capital letters and numbers. Everything else, except for blank spaces, gets kinda weird, becoming any char on the ASCII table.
 
